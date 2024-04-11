@@ -19,7 +19,7 @@ function ftnSalutation(){
 */
 const ftnGreeting = (salutation, user) => {
     //  implement your statement(s) here
-    const msg = "Hi " + salutation + " " + user + ".";
+    const msg = "Hi " + salutation + " " + user + "! We received your submission.";
     return msg;
 }
 

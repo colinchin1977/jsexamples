@@ -117,14 +117,35 @@
       // TODO: We will need to validate the inputs before giving feedback to the user
       const validated = validateInputs(selectedChoice, uName);
 
-      // !true == false
-      // !false == true
-      if(!validated)
-        return alert("You have not filled in all the data");
+      // Check if meal preference is selected
+      const mealPreference = document.getElementsByName("inlineRadioMeal");
 
+      // Create a boolean set the mealChecked to false (default)
+      let mealSelected = false;
+      
+      // loop through the mealPreference radio buttons
+      // so long as one of the radio buttons is selected, set mealSelected to true and break out of the loop
+      for (let index = 0; index < mealPreference.length; index++) {
+        if(mealPreference[index].checked){
+          mealSelected = true;
+          break;
+        }
+      }
+
+      // discontinue and show alert if validateInputs returns false or mealSelected is false
+      // if(!validated || !mealSelected)
+      //   return alert("Please complete all inputs");
+
+      // using logical AND operation to ensure that name is validated == true AND mealSelected == true
+      if(validated && mealSelected){
+      // call ftnGreeting, pass in the "selectedChoice" and "uName"
       const result = ftnGreeting(selectedChoice, uName);
         return alert(result);
     }
+
+    return alert("Please complete all fields.");
+
+  }
 
     // Older working but longer method:
       // == checks for the value to compare
