@@ -43,7 +43,7 @@ while(userInput.toUpperCase() !== "Q"){ // as long as the user doesn't enter 'q'
             break;
 
         case (userInput < ans):
-            userFeedback = feedbackTooHigh;
+            userFeedback = feedbackTooLow;
             correctAns = false;
             break;
         
