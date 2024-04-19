@@ -41,4 +41,9 @@ If you have completed the above tasks, try the following extra tasks for a bonus
         // call fetch() api here 
         // return the JSON data
     }
+<<<<<<< HEAD
 ```
+=======
+```
+
+>>>>>>> 5968c26f2f0ea33c2e77aaacb318a1b489a22414

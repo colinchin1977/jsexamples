@@ -114,7 +114,11 @@ function loadColorsFromStorage() {
 // Ensure that the document's content is loaded before
 // running fetchColorList() and locdColoursFromStorage()
 document.addEventListener("DOMContentLoaded", () => {
+<<<<<<< HEAD
     // fetchColorsList();
+=======
+    fetchColorsList();
+>>>>>>> 5968c26f2f0ea33c2e77aaacb318a1b489a22414
     // loadColorsFromStorage();
 })
 
@@ -150,6 +154,10 @@ async function ftnFetch(endpoint, page = 1){
         return await response.json();
 
     } catch (error) {
+<<<<<<< HEAD
         listColors.innerHTML = "<span class='p-2'> Unable to load colours. Please try again later. <span>";
+=======
+        listColors.innerHTML = "<span class='p-2'> Unable to load colours. <span>";
+>>>>>>> 5968c26f2f0ea33c2e77aaacb318a1b489a22414
     }
 }

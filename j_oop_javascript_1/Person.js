@@ -11,16 +11,23 @@ function Person(fName, lName) {
 
 const person1 = new Person("John","Doe"); 
 const person2 = new Person("Steve", "Smith");
+<<<<<<< HEAD
 const person3 = new Person("Sally", "Wong" );
 
 console.log(person1); 
 console.log(person2);
 console.log(person3);
+=======
+
+console.log(person1); 
+console.log(person2);
+>>>>>>> 5968c26f2f0ea33c2e77aaacb318a1b489a22414
 
 // c) Add a new PROPERTY gender to the Person constructor function.
 // Note: Now, person1 and person2 objects inherits gender property from it constructor ftn too.
 
 Person.prototype.gender = "Male";
+<<<<<<< HEAD
 Person.prototype.age = 0;
 console.log(person1.gender); 
 console.log(person2.gender);
@@ -29,6 +36,11 @@ person3.gender = "Female";
 person3.age = 21;
 console.log(person3);
 
+=======
+console.log(person1.gender); 
+console.log(person2.gender);
+
+>>>>>>> 5968c26f2f0ea33c2e77aaacb318a1b489a22414
 // d) Add a new METHOD gender to the Person constructor function.
 // Note: Now, person1 and person2 objects inherits getFullName method from its constructor ftn too.
 
@@ -37,6 +49,7 @@ Person.prototype.getFullName = function(){
 };
 
 console.log("Greetings " + person1.getFullName()); 
+<<<<<<< HEAD
 console.log("Greetings " + person2.getFullName());
 
 // e) Challeng
@@ -59,3 +72,6 @@ Person.prototype.printNameAndDOB = function(){
 // };
 
 console.log(person3.printNameAndDOB());
+=======
+console.log("Greetings " + person2.getFullName());
+>>>>>>> 5968c26f2f0ea33c2e77aaacb318a1b489a22414
